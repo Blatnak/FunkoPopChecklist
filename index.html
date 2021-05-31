@@ -4,32 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link 
       rel="stylesheet" 
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
       >
+      <link rel="stylesheet" href="styles.css">
     <title>FunkoPop Checklist</title>
 </head>
 <body>
     <header>
-    <nav class="navbar navbar-light bg-light">
+  
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-              <img width="100%" src="https://www.crystalcommerce.com/blog/wp-content/uploads/sites/2/2019/12/billboard_funko-pop-1024x264.jpg" alt="Funko Pop Banner">
+            <img width="100px" height="100%" src="Assets/funko-logo-1.png" alt="Funko Logo">
           </a>
-        </div>
-    </nav>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Funko Checklist</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
@@ -67,20 +65,25 @@
                   <a class="nav-link" href="#">Próximamente</a>
               </li>
             </ul>
-            <form class="d-flex">
+            <form class="d-flex justify-content-end search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-primary" type="submit">Buscar</button>
             </form>
-            <form class="form-inline my-2 my-lg-0 justify-content-end">
+            <form class="form-inline my-2 my-lg-0 justify-content-end actions">
                 <button type="button" class="btn btn-primary">Mi Cuenta</button>
             </form>
           </div>
         </div>
       </nav>
+      <figure class="banner">
+              <img src="https://www.crystalcommerce.com/blog/wp-content/uploads/sites/2/2019/12/billboard_funko-pop-1024x264.jpg" alt="Funko Pop Banner">
+      </figure>
     </header>
 
     <main>
-        <h1>Funko POP! Checklists</h1>
+      <h1>Funko POP! Checklist</h1>
+      <section class="welcome">
+      <div class="item-container">
         <h3>¡Haciendo la gestión de tu colección mucho más sencilla!</h3>
         <p>En ésta página podrás encontrar checklists para tus fandoms y series POP! favoritas,
             olvidate de tener que descargar una imagen nueva y editarla cada vez que se anuncien
@@ -89,13 +92,24 @@
             Creando una cuenta podrás guardar y marcar tus fandoms favoritos con las plantillas actualizadas
             lo más rápido posible en cuanto se anuncie un POP! nuevo.
         </p>
-
+        <p>Mantente al tanto de todas las actualizaciones:</p>
+        <form class="signup-form form-inline my-2 my-lg-0">
+          <div>
+            <input class=" form-control me-2" type="email" placeholder="Ingresa tu email">
+            <button type="button" class="btn btn-primary">SuscrÍbete &rarr;</button>
+          </div>
+        </form>
+      </div>
+      <div>
         <figure>
             <img src="Assets/ChecklistMHA.jpg" alt="Checklist MHA">
         </figure>
+      </div>
+      </section>
     </main>
 
-    <section>
+    <section class="fandoms-principales">
+      <div class="texto-fandoms-principales">
         <h3>Fandoms Principales Funko POP!</h3>
 
         <p>Los fandoms de Funko POP! Son aquellos que están basados en algúna franquicia especifica,
@@ -105,33 +119,219 @@
             En caso de buscar un POP! en concreto, puedes utilizar el buscador, el cuál te llevará directamente
             a la figura.
         </p>
-        <article>
-            <div class="container">
-                <img src="" alt="Harry Potter">
-                <img src="" alt="Lord Of The Rings">
-                <img src="" alt="Game of Thrones">
-                <img src="" alt="Avengers Endgame">
-                <img src="" alt="Batman">
-                <img src="" alt="Stranger Things">
-                <img src="" alt="Star Wars">
-                <img src="" alt="Jurassic Park">
-                <img src="" alt="Breaking Bad">
-                <img src="" alt="Spiderman">
-                <img src="" alt="Rick and Morty">
-                <img src="" alt="The Walking Dead">
-                <img src="" alt="Disney Princess">
-                <img src="" alt="Saint Seiya">
-                <img src="" alt="Yu-Gi-Oh">
-                <img src="" alt="Pokemon">
-                <img src="" alt="Monster Hunter">
-                <img src="" alt="Naruto">
-                <img src="" alt="Dragon Ball">
-                <img src="" alt="One Piece">
-                <img src="" alt="My Hero Academia">
-                <img src="" alt="Demon Slayer">
-                <img src="" alt="World Of Warcraft">
-                <img src="" alt="League Of Legends">
-                <img src="" alt="Fortnite">
+      </div>
+        <article class="logos-fandoms-principales">
+            <div class="container grid-container">
+              <div class="row">
+                <div class="col">
+                  <a href="#">
+                    <figure>
+                  <img width="200" height="136" src="Assets/Fandom_Logos/HarryPotter.jpg" alt="Harry Potter">
+                  <figcaption>Harry Potter</figcaption>
+                    </figure>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="#">
+                    <figure>
+                  <img src="Assets/Fandom_Logos/LOTR.jpg" alt="Lord Of The Rings">
+                  <figcaption>The Lord Of The Rings</figcaption>
+                    </figure>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="#">
+                    <figure>
+                  <img src="Assets/Fandom_Logos/GOT.jpg" alt="Game Of Thrones">
+                  <figcaption>Game Of Thrones</figcaption>
+                    </figure>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="#">
+                    <figure>
+                  <img src="Assets/Fandom_Logos/Avengers Endgame.jpg" alt="Avengers Endgame">
+                  <figcaption>Avengers Endgame</figcaption>
+                    </figure>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="#">
+                    <figure>
+                  <img src="Assets/Fandom_Logos/Batman Logo.png" alt="Batman">
+                  <figcaption>Batman</figcaption>
+                    </figure>
+                  </a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <a href="#">
+                    <figure>
+                  <img src="Assets/Fandom_Logos/StrangerThings.jpg" alt="Stranger Things">
+                  <figcaption>Stranger Things</figcaption>
+                    </figure>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="">
+                    <figure>
+                  <img src="Assets/Fandom_Logos/StarWars.jpg" alt="Star Wars">
+                  <figcaption>Star Wars</figcaption>
+                    </figure>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="">
+                    <figure>
+                  <img src="Assets/Fandom_Logos/JP.jpg" alt="Jurassic Park">
+                  <figcaption>Jurassic Park</figcaption>
+                    </figure>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="">
+                    <figure>
+                  <img src="Assets/Fandom_Logos/BreakingBad.png" alt="Breaking Bad">
+                  <figcaption>Breaking Bad</figcaption>
+                    </figure>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="">
+                    <figure>
+                  <img src="Assets/Fandom_Logos/Spiderman.png" alt="Spiderman">
+                  <figcaption>Spider-Man</figcaption>
+                    </figure>
+                  </a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <a href="#">
+                    <figure>
+                  <img src="Assets/Fandom_Logos/Rick and Morty.jpg" alt="Rick and Morty">
+                  <figcaption>Rick and Morty</figcaption>
+                    </figure>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="#">
+                    <figure>
+                  <img src="Assets/Fandom_Logos/TWD.jpg" alt="The Walking Dead">
+                  <figcaption>The Walking Dead</figcaption>
+                    </figure>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="#">
+                    <figure>
+                  <img src="Assets/Fandom_Logos/Digimon.jpg" alt="Digimon">
+                  <figcaption>Digimon</figcaption>
+                    </figure>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="#">
+                    <figure>
+                  <img src="Assets/Fandom_Logos/SaintSeiya.png" alt="Saint Seiya">
+                  <figcaption>Saint Seiya</figcaption>
+                    </figure>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="#">
+                    <figure>
+                  <img src="Assets/Fandom_Logos/Yugioh.jpg" alt="Yu-Gi-Oh">
+                  <figcaption>Yu-Gi-Oh</figcaption>
+                    </figure>
+                  </a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <a href="#">
+                    <figure>
+                  <img src="Assets/Fandom_Logos/Pokemon.jpg" alt="Pokemon">
+                  <figcaption>Pokemon</figcaption>
+                    </figure>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="#">
+                    <figure>
+                  <img src="Assets/Fandom_Logos/Monster Hunter.jpg" alt="Monster Hunter">
+                  <figcaption>Monster Hunter</figcaption>
+                    </figure>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="#">
+                    <figure>
+                  <img src="Assets/Fandom_Logos/Naruto.png" alt="Naruto">
+                  <figcaption>Naruto</figcaption>
+                    </figure>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="#">
+                    <figure>
+                  <img src="Assets/Fandom_Logos/DB.png" alt="Dragon Ball">
+                  <figcaption>Dragon Ball</figcaption>
+                    </figure>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="#">
+                    <figure>
+                  <img src="Assets/Fandom_Logos/Op.jpg" alt="One Piece">
+                  <figcaption>One Piece</figcaption>
+                    </figure>
+                  </a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <a href="#">
+                    <figure>
+                  <img src="Assets/Fandom_Logos/MHA.jpg" alt="My Hero Academia">
+                  <figcaption>My Hero Academia</figcaption>
+                    </figure>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="#">
+                    <figure>
+                  <img src="Assets/Fandom_Logos/Demon Slayer.png" alt="Demon Slayer">
+                  <figcaption>Demon Slayer</figcaption>
+                    </figure>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="#">
+                    <figure>
+                  <img src="Assets/Fandom_Logos/WoW.jpg" alt="World of Warcraft">
+                  <figcaption>World Of Warcraft</figcaption>
+                    </figure>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="#">
+                    <figure>
+                  <img src="Assets/Fandom_Logos/lol.jpg" alt="League Of Legends">
+                  <figcaption>League Of Legends</figcaption>
+                    </figure>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="#">
+                    <figure>
+                  <img src="Assets/Fandom_Logos/Fortnite.jpg" alt="Fortnite">
+                  <figcaption>Fortnite</figcaption>
+                    </figure>
+                  </a>
+                </div>
+              </div>
             </div>
         </article>
     </section>
