@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link 
+      rel="stylesheet" 
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+      >
+      <link rel="stylesheet" href="styles.css">
+      <link rel="shortcut icon" href="Assets/5425954-funko-everyone-is-a-fan-of-something-funko-funko-logo-png-380_360_preview.png">
+    <title>My Hero Academia Checklist</title>
+</head>
+<body>
+    <header>
+  
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+                <img width="100px" height="100%" src="Assets/funko-logo-1.png" alt="Funko Logo">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Checklist</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      POP! Series
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Heroes</a></li>
+                      <li><a class="dropdown-item" href="#">Películas</a></li>
+                      <li><a class="dropdown-item" href="#">Televisión</a></li>
+                      <li><a class="dropdown-item" href="#">Animación</a></li>
+                      <li><a class="dropdown-item" href="#">Juegos</a></li>
+                      <li><a class="dropdown-item" href="#">Deportes</a></li>
+                      <li><a class="dropdown-item" href="#">Animales</a></li>
+                      <li><a class="dropdown-item" href="#">Monstruos</a></li>
+                      <li><a class="dropdown-item" href="#">SCI-FI</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Todos</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Fandoms</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Noticias</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Reviews</a>
+                </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Próximamente</a>
+                  </li>
+                </ul>
+                <form class="d-flex justify-content-end search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-primary" type="submit">Buscar</button>
+                </form>
+                <form class="form-inline my-2 my-lg-0 justify-content-end actions">
+                    <button type="button" class="btn btn-primary">Mi Cuenta</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+          <figure class="banner">
+              <img src="mhaAssets/banner.jpg" alt="Banner My Hero Academia">
+          </figure>
+    </header>
+  </header>
+
+  <main>
+    <h1>My Hero Academia Checklist</h1>
+    <hr class="wp-block-separator">
+
+    <article id="mhaChecklist">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-247-Deku.jpg" alt="Deku">
+                <input type="checkbox" class="checkbox" id='check1' onclick='update()'>
+                <figcaption>DEKU</figcaption>
+              </figure>
+          </div>
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-248-All-Might-Super-Sized.jpg" alt="All Might">
+                <input type="checkbox" class="checkbox" id='check2'>
+                <figcaption>ALL MIGHT</figcaption>
+              </figure>
+          </div>
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-Figures-248-All-Might-GITD-Glow-in-the-Dark-Funimation-Exclusive.jpg" alt="All Might GITD">
+                <input type="checkbox" class="checkbox" id='check3'>
+                <figcaption>ALL MIGHT (GITD)</figcaption>
+              </figure>
+          </div>
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-Figures-248-All-Might-Silver-Chrome-Funimation-Exclusive.jpg" alt="All Might Silver">
+                <input type="checkbox" class="checkbox" id='check4'>
+                <figcaption>ALL MIGHT (SILVER)</figcaption>
+              </figure>
+          </div>
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-249-Katsuki.jpg" alt="Katsuki">
+                <input type="checkbox" class="checkbox" id='check5'>
+                <figcaption>KATSUKI</figcaption>
+              </figure>
+          </div>
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-250-Tenya.jpg" alt="Tenya">
+                <input type="checkbox" class="checkbox" id='check6'>
+                <figcaption>TENYA</figcaption>
+              </figure>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-251-Ochaco.jpg" alt="Ochaco Uraraka">
+                <input type="checkbox" class="checkbox" id='check7'>
+                <figcaption>OCHACO URARAKA</figcaption>
+              </figure>
+          </div>
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-252-Deku-Battle-Hot-Topic-Exclusive.jpg" alt="Deku (battle)">
+                <input type="checkbox" class="checkbox" id='check8'>
+                <figcaption>DEKU (BATTLE)</figcaption>
+              </figure>
+          </div>
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-253-Ochaco-Masked-2017-SDCC-Funimation.jpg" alt="Ochaco (Masked)">
+                <input type="checkbox" class="checkbox" id='check9'>
+                <figcaption>OCHACO (MASKED)</figcaption>
+              </figure>
+          </div>
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-371-All-Might-Weakened.jpg" alt="All Might (Weakened)">
+                <input type="checkbox" class="checkbox" id='check10'>
+                <figcaption>ALL MIGHT (WEAKENED)</figcaption>
+              </figure>
+          </div>
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-372-Todoroki.jpg" alt="Todoroki">
+                <input type="checkbox" class="checkbox" id='check11'>
+                <figcaption>TODOROKI</figcaption>
+              </figure>
+          </div>
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-Figures-372-Todoroki-Glow-in-the-Dark-GITD-Convention-Exclusive.jpg" alt="Todoroki (GITD)">
+                <input type="checkbox" class="checkbox" id='check12'>
+                <figcaption>TODOROKI (GITD)</figcaption>
+              </figure>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-Figures-372-Todoroki-Metallic-Box-Warehouse-Exclusive.jpg" alt="Todoroki (Metallic)">
+                <input type="checkbox" class="checkbox" id='check13'>
+                <figcaption>TODOROKI (METALLIC)</figcaption>
+              </figure>
+          </div>
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-373-Deku-Training.jpg" alt="Deku (Training)">
+                <input type="checkbox" class="checkbox" id='check14'>
+                <figcaption>DEKU (TRAINING)</figcaption>
+              </figure>
+          </div>
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-374-Tsuyu.jpg" alt="Tsuyu">
+                <input type="checkbox" class="checkbox" id='check15'>
+                <figcaption>TSUYU</figcaption>
+              </figure>
+          </div>
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-374-Tsuyu-Translucent.jpg" alt="Tsuyu (Translucent)">
+                <input type="checkbox" class="checkbox" id='check16'>
+                <figcaption>TSUYU (TRANSLUCENT)</figcaption>
+              </figure>
+          </div>
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-375-Shota-Aizawa.jpg" alt="Shota Aizawa">
+                <input type="checkbox" class="checkbox" id='check17'>
+                <figcaption>SHOTA AIZAWA</figcaption>
+              </figure>
+          </div>
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-376-Shota-Aizawa-Hero-Costume-Hot-Topic.jpg" alt="Shota Aizawa (Hero Costume)">
+                <input type="checkbox" class="checkbox" id='check18'>
+                <figcaption>SHOTO AIZAWA (HERO C.)</figcaption>
+              </figure>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-494-Deku-in-Onesie-GameStop-Mystery-Box-Exclusive.jpg" alt="Deku in onesie">
+                <input type="checkbox" class="checkbox" id='check19'>
+                <figcaption>DEKU IN ONESIE</figcaption>
+              </figure>
+          </div>
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-495-Endeavor-GameStop-Mystery-Box-Exclusive.jpg" alt="Endeavor (Mistery Box)">
+                <input type="checkbox" class="checkbox" id='check20'>
+                <figcaption>ENDEAVOR (MISTERY BOX)</figcaption>
+              </figure>
+          </div>
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-Figures-564-Deku-Season-3-Hot-Topic-Exclusive.jpg" alt="Deku (Season 3)">
+                <input type="checkbox" class="checkbox" id='check21'>
+                <figcaption>DEKU (SEASON 3)</figcaption>
+              </figure>
+          </div>
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-Figures-565-Tomura-Shigaraki-Galactic-Toys-Exclusive.jpg" alt="Tomura Shigaraki (Galactic)">
+                <input type="checkbox" class="checkbox" id='check22'>
+                <figcaption>TOMURA SHIGARAKI</figcaption>
+              </figure>
+          </div>
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-Figures-596-Deku-Full-Cowl-Glow-in-the-Dark-Entertainment-Earth-Exclusive.jpg" alt="Deku (Full Cowling)">
+                <input type="checkbox" class="checkbox" id='check23'>
+                <figcaption>DEKU (FULL COWLING)</figcaption>
+              </figure>
+          </div>
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-Figures-603-Izuku-Midoriya-Deku-with-Helmet.jpg" alt="Izuku Midoriya (Helmet)">
+                <input type="checkbox" class="checkbox" id='check24'>
+                <figcaption>IZUKU MIDORIYA (HELMET)</figcaption>
+              </figure>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-Figures-603-Izuku-Midoriya-Metallic-FYE-Exclusive.jpg" alt="Izuku Midoriya (Metallic)">
+                <input type="checkbox" class="checkbox" id='check25'>
+                <figcaption>I. MIDORIYA (METALLIC)</figcaption>
+              </figure>
+          </div>
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-Figures-604-All-Might-Teacher.jpg" alt="All Might (Teacher)">
+                <input type="checkbox" class="checkbox" id='check26'>
+                <figcaption>ALL MIGHT (TEACHER)</figcaption>
+              </figure>
+          </div>
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-Figures-605-Momo-Yaoyorozu.jpg" alt="Momo Yaoyorozu">
+                <input type="checkbox" class="checkbox" id='check27'>
+                <figcaption>MOMO YAOYOROZU</figcaption>
+              </figure>
+          </div>
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-Figures-606-Eijiro-Kirishima.jpg" alt="Eijiro Kirishima">
+                <input type="checkbox" class="checkbox" id='check28'>
+                <figcaption>EIJIRO KIRISHIMA</figcaption>
+              </figure>
+          </div>
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-Figures-606-Eijiro-Kirishima-Metallic-BoxLunch-Exclusive.jpg" alt="Eijiro Kirishima (Metallic)">
+                <input type="checkbox" class="checkbox" id='check29'>
+                <figcaption>E. KIRISHIMA (METALLIC)</figcaption>
+              </figure>
+          </div>
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-Figures-607-Fumikage-Tokoyami.jpg" alt="Fumikage Tokoyami">
+                <input type="checkbox" class="checkbox" id='check30'>
+                <figcaption>FUMIKAGE TOKOYAMI</figcaption>
+              </figure>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-Figures-Fumikage-Tokoyami-Metallic-GameStop-T-Shirt-Bundle-Exclusive.jpg" alt="Fumikage Tokoyami (Metallic)">
+                <input type="checkbox" class="checkbox" id='check31'>
+                <figcaption>F. TOKOYAMI (METALLIC)</figcaption>
+              </figure>
+          </div>
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-Figures-608-Silver-Age-All-Might.jpg" alt="Silver Age All Might">
+                <input type="checkbox" class="checkbox" id='check32'>
+                <figcaption>SILVER AGE ALL MIGHT</figcaption>
+              </figure>
+          </div>
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-Figures-608-Silver-Age-All-Might-Metallic-Barnes-Noble-Exclusive.jpg" alt="Silver Age All Might (Metallic)">
+                <input type="checkbox" class="checkbox" id='check33'>
+                <figcaption>S.A. ALL MIGHT (METALLIC)</figcaption>
+              </figure>
+          </div>
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-Figures-608-Silver-Age-All-Might-Glow-in-the-Dark-Hot-Topic-T-Shirt-Bundle-Exclusive.jpg" alt="Silver Age All Might (GITD)">
+                <input type="checkbox" class="checkbox" id='check34'>
+                <figcaption>S.A. ALL MIGHT (GITD)</figcaption>
+              </figure>
+          </div>
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-Figures-609-All-for-One.jpg" alt="All for One">
+                <input type="checkbox" class="checkbox" id='check35'>
+                <figcaption>ALL FOR ONE</figcaption>
+              </figure>
+          </div>
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-Figures-610-Himiko-Toga-AAA-Anime-Exclusive.jpg" alt="Himiko Toga (Exclusive)">
+                <input type="checkbox" class="checkbox" id='check36'>
+                <figcaption>HIMIKO TOGA (EXCLUSIVE)</figcaption>
+              </figure>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-Figures-611-Mirio-Togata-Chalice-Collectibles-Exclusive-new.jpg" alt="Mirio Togata">
+                <input type="checkbox" class="checkbox" id='check37'>
+                <figcaption>MIRIO TOGATA</figcaption>
+              </figure>
+          </div>
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-Figures-612-Mount-Lady-622-Super-Sized-Hot-Topic-Exclusive.jpg" alt="Mount Lady (Super Sized)">
+                <input type="checkbox" class="checkbox" id='check38'>
+                <figcaption>MOUNT LADY (S.S.)</figcaption>
+              </figure>
+          </div>
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/2019-Funko-New-York-Comic-Con-Exclusives-Figures-Funko-Pop-My-Hero-Academia-636-Hero-Killer-Stain.jpg" alt="Hero Killer Stain">
+                <input type="checkbox" class="checkbox" id='check39'>
+                <figcaption>HERO KILLER STAIN</figcaption>
+              </figure>
+          </div>
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/2019-Funko-New-York-Comic-Con-Exclusives-Funko-Pop-My-Hero-Academia-637-Dabi-NYCC-Exclusive-Figure.jpg" alt="Dabi">
+                <input type="checkbox" class="checkbox" id='check40'>
+                <figcaption>DABI</figcaption>
+              </figure>
+          </div>
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-Figures-646-All-for-One-with-Battle-Hand-Big-Apple-Collectables-Exclusive.jpg" alt="All for One (Battle Hand)">
+                <input type="checkbox" class="checkbox" id='check41'>
+                <figcaption>ALL FOR ONE (B.H.)</figcaption>
+              </figure>
+          </div>
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-Figures-647-All-For-One-Fugitive-Toys-Exclusive.jpg" alt="All for One (Fugitive)">
+                <input type="checkbox" class="checkbox" id='check42'>
+                <figcaption>ALL FOR ONE (FUGITIVE)</figcaption>
+              </figure>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-Dragon-Ball-Z-Vinyl-Figures-648-All-Might-Weakened-Glow-GITD-BoxLunch-Exclusive.jpg" alt="All Might Weakened (GITD)">
+                <input type="checkbox" class="checkbox" id='check43'>
+                <figcaption>A.M. WEAKENED (GITD)</figcaption>
+              </figure>
+          </div>
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-Figures-681-Mei-Hatsume-Hot-Topic-Exclusive.jpg" alt="Mei Hatsume">
+                <input type="checkbox" class="checkbox" id='check44'>
+                <figcaption>MEI HATSUME</figcaption>
+              </figure>
+          </div>
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-Figures-695-Hitoshi-Shinso-GameStop-Exclusive.jpg" alt="Hitoshi Shinso">
+                <input type="checkbox" class="checkbox" id='check45'>
+                <figcaption>HITOSHI SHINSO</figcaption>
+              </figure>
+          </div>
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-Vinyl-Figures-736-Midnight-Galactic-Toys-Exclusive.jpg" alt="Midnight">
+                <input type="checkbox" class="checkbox" id='check46'>
+                <figcaption>MIDNIGHT</figcaption>
+              </figure>
+          </div>
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-Figures-Tenya-Iida-GameStop-T-Shirt-Bundle-Exclusive.jpg" alt="Tenya Iida">
+                <input type="checkbox" class="checkbox" id='check47'>
+                <figcaption>TENYA IIDA</figcaption>
+              </figure>
+          </div>
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/2020-Funko-San-Diego-Comic-Con-Exclusives-Funko-Pop-My-Hero-Academia-803-Katsuki-Bakugo-SDCC-Exclusive.jpg" alt="Katsuki Bakugo (SDCC)">
+                <input type="checkbox" class="checkbox" id='check48'>
+                <figcaption>KATSUKI BAKUGO (SDCC)</figcaption>
+              </figure>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-Figures-783-Izuku-Midoriya.jpg" alt="Izuku Midoriya">
+                <input type="checkbox" class="checkbox" id='check49'>
+                <figcaption>IZUKU MIDORIYA</figcaption>
+              </figure>
+          </div>
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-Figures-Shigaraki.jpg" alt="Shigaraki">
+                <input type="checkbox" class="checkbox" id='check50'>
+                <figcaption>SHIGARAKI</figcaption>
+              </figure>
+          </div>
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-Figures-785-Endeavor.jpg" alt="Endeavor">
+                <input type="checkbox" class="checkbox" id='check51'>
+                <figcaption>ENDEAVOR</figcaption>
+              </figure>
+          </div>
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-Figures-785-Endeavor-GITD.jpg" alt="Endeavor (GITD)">
+                <input type="checkbox" class="checkbox" id='check52'>
+                <figcaption>ENDEAVOR (GITD)</figcaption>
+              </figure>
+          </div>
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-Figures-786-Best-Jeanist.jpg" alt="Best Jeanist">
+                <input type="checkbox" class="checkbox" id='check53'>
+                <figcaption>BEST JEANIST</figcaption>
+              </figure>
+          </div>
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-Figures-787-Himiko-Toga.jpg" alt="Himiko Toga">
+                <input type="checkbox" class="checkbox" id='check54'>
+                <figcaption>HIMIKO TOGA</figcaption>
+              </figure>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-Figures-788-Overhaul.jpg" alt="Overhaul">
+                <input type="checkbox" class="checkbox" id='check55'>
+                <figcaption>OVERHAUL</figcaption>
+              </figure>
+          </div>
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-Figures-789-Kurogiri.jpg" alt="Kurogiri">
+                <input type="checkbox" class="checkbox" id='check56'>
+                <figcaption>KUROGIRI</figcaption>
+              </figure>
+          </div>
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-Figures-790-Mina-Ashido.jpg" alt="Mina Ashido">
+                <input type="checkbox" class="checkbox" id='check57'>
+                <figcaption>MINA ASHIDO</figcaption>
+              </figure>
+          </div>
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-Figures-790-Mina-Ashido-Metallic.jpg" alt="Mina Ashido (Metallic)">
+                <input type="checkbox" class="checkbox" id='check58'>
+                <figcaption>MINA ASHIDO (METALLIC)</figcaption>
+              </figure>
+          </div>
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-Figures-821-All-Might-10-Super-Sized.jpg" alt="All Might (Super Sized)">
+                <input type="checkbox" class="checkbox" id='check59'>
+                <figcaption>ALL MIGHT (SUPER SIZED)</figcaption>
+              </figure>
+          </div>
+          <div class="col">
+              <figure>
+                <img src="mhaAssets/Funko-Pop-My-Hero-Academia-Town-Figures-04-U.A.-High-School-with-Izuku-Midoriya-1.jpg" alt="U.A. High School with Izuku">
+                <input type="checkbox" class="checkbox" id='check60'>
+                <figcaption>U.A. HIGH SCHOOL - IZUKU</figcaption>
+              </figure>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="progress">
+              <div id="mhaProgressBar" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                0%
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+          <script
+              src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" 
+              integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" 
+              crossorigin="anonymous">
+              
+              function update() {
+                let checked = 0
+                let progress = document.querySelector('.progress-bar')
+                let mhaChecklist = document.querySelectorAll('input[type=checkbox]')
+                
+                boxes = mhaChecklist.querySelectorAll('input[type=checkbox]:checked')
+                checked = boxes.length
+
+                progress.style.width = ((checked / 60) * 100) + '%'
+              }
+
+          </script>
+</body>
+</html>
