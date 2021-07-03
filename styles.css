@@ -208,6 +208,7 @@ figcaption {
 .progress-bar {
   background-color: green;
   border-radius: 20px;
+  font-family: "Poppins", sans-serif;
 }
 
 .coming-soon-funkos img {
