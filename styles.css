@@ -245,4 +245,10 @@ figcaption {
   margin: 0 0 5px;
 }
 
+.funko-avaliable {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  align-items: center;
+}
+
 /*# sourceMappingURL=styles.css.map */
