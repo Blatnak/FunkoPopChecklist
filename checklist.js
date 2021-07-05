@@ -1,34 +1,12 @@
 function update() {
-    let checked = 0
     let progress = document.getElementById('progressBar')
     let funkosNumber = document.querySelectorAll('input[type=checkbox]').length
-    let boxes = document.querySelectorAll('input[type=checkbox]:checked')
+    let checked = document.querySelectorAll('input[type=checkbox]:checked').length
 
-    checked = boxes.length
     progress.style.width = ((checked / funkosNumber) * 100) + '%'
     progress.textContent = Math.round(((checked / funkosNumber) * 100)) + '%'
-
-    let modal = document.getElementById('modal')
-    let closeModal = document.getElementById('close-modal')
-
-    if (checked === funkosNumber) {
-      // alert('¡Felicidades! Completaste ésta colección')
-      modal.style.display = 'block'
-    }
-
-    closeModal.onclick = function() {
-      modal.style.display = 'none'
-    }
-
-    window.onclick = function(event) {
-      if (event.target === modal) {
-        modal.style.display = 'none'
-      }
-    }
   }
-
-  document.addEventListener('click', update)
-  window.onload = update
+  
 
   function selectAll() {
     let checkboxes = document.getElementsByClassName('checkbox')
@@ -47,3 +25,30 @@ function update() {
       }
     }
   }
+
+  let modalClick = false
+
+  function modalStatus() {
+    let funkosNumber = document.querySelectorAll('input[type=checkbox]').length
+    let checked = document.querySelectorAll('input[type=checkbox]:checked').length
+
+    if (checked === funkosNumber) {
+      modal.style.display = 'block'
+      modalClick = true
+    }
+  }
+
+  window.onclick = function(event) {
+    let modal = document.getElementById('modal')
+    let closeModal = document.getElementById('close-modal')
+
+    let id = event.target.id
+    if (id === modal.id || id === closeModal.id) {
+      modal.style.display = 'none'
+    } else if (!modalClick) {
+      modalStatus()
+    }
+  }
+
+  document.addEventListener('click', update)
+  window.onload = update
